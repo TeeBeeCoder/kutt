@@ -11,8 +11,6 @@ services:
         REDIS_ENABLED: true
         REDIS_HOST: redis
         REDIS_PORT: 6379
-    ports:
-      - 3000:3000
     depends_on:
       mariadb:
         condition: service_healthy
